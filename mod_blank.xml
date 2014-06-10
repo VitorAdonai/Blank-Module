@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="module" client="site" method="upgrade">
+	<name>Module Blank</name>
+	<author>Vitor Barbosa</author>
+	<creationDate>03/01/2013</creationDate>
+	<copyright>Copyright</copyright>
+	<license>Licence Link</license>
+	<authorEmail>Author E-mail</authorEmail>
+	<authorUrl>Author URL</authorUrl>
+	<version>1.0</version>
+	<description>Description</description>
+
+	<files>
+		<filename module="mod_blank">mod_blank.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+	<languages folder="languages">
+		<language tag="en-GB">en-GB.mod_blank.ini</language>
+		<language tag="en-GB">en-GB.mod_blank.sys.ini</language>
+	</languages>
+
+	<updateservers>
+		<server type="extension" name="Module Blank" priority="1">Author URL/updates/mod_blank.xml</server>
+	</updateservers>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="field1" type="text" label="Demo Field 1" default="Field 1" description="Description for field 1" />
+				<field name="field2" type="text" label="Demo Field 2" default="Field 2" description="Description for field 2" />
+				<field name="field3" type="radio" label="Demo Field 3" default="1" description="Description for field 3">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
